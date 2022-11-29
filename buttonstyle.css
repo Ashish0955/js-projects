@@ -1,0 +1,88 @@
+body{
+    background: linear-gradient( #33ccff , #ff99cc,#33ccff,#ff99cc );
+    
+    
+}
+
+
+
+/* 
+.button {
+    background-color: #DBA39A;
+    position: relative;
+    padding: 10px 40px ;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid red;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #F0DBDB;
+}
+
+.button::before  {
+    content: "";
+    background-color: #F5EBE0;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    border-radius: 50%;
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    height: 0px;
+    transition: all 0.5s linear;
+}
+
+/.button:hover::before    {
+    height: 50px;
+    width: 50px;
+} 
+
+.button::after  {
+    content: "";
+    position: relative;
+    z-index: 1;
+
+} */ 
+.h1{
+    padding: 2%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px black dotted ;
+}
+
+
+.btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: BLACK !important;
+    outline: 2px solid #0a5d83;
+    padding: 30px 60px;
+    overflow: hidden;
+    transition: color 1s;
+}
+.btn:hover{
+    color: #022b13;
+}
+.btn::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -50;
+    z-index: -1;
+    width: 150%;
+    height: 150%;
+    background-color: #da3dab;
+    transform: scale(0) skewX(0deg);
+    transform-origin:left top ;
+    transition: transform 1s;
+}
+.btn:hover::before{
+    transform: scale(1) skewX(0deg);
+}   
